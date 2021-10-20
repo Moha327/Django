@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Counter:</h1>
+             <p>{{request.session.count}} times</p>
+             <p>{{request.session.count}} times</p>
+             <p>{{request.session.count2}} times</p>
+             <form action="/" >
+                {% csrf_token %}
+                <input class="greenbutton" type="submit" name="button" value="Reset">
+            </form>
+            <form action="/destroy_session" >
+                {% csrf_token %}
+                
+                <input class="greenbutton" type="submit" name="button" value="Reset">
+            </form>
+            <form action="/add2" >
+                {% csrf_token %}
+                <input class="greenbutton" type="submit" name="button" value="Reset">
+            </form>
+    </div>
+ 
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    
+    
